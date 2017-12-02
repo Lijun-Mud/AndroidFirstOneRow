@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hb49417.myapplication.tio.FileOutputActivity">
+
+    <EditText
+        android:id="@+id/file_output_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/file_output_save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Save"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/file_output_textview" />
+
+    <Button
+        android:id="@+id/file_output_load_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:text="Load"
+        app:layout_constraintLeft_toRightOf="@+id/file_output_save_button"
+        app:layout_constraintTop_toTopOf="@+id/file_output_save_button"
+        app:layout_constraintBottom_toBottomOf="@+id/file_output_save_button"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/file_db_insert_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/file_output_save_button" />
+
+    <Button
+        android:id="@+id/file_db_update_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        app:layout_constraintLeft_toRightOf="@+id/file_db_insert_button"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintTop_toTopOf="@+id/file_db_insert_button"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/file_db_insert_button"
+        android:layout_marginBottom="0dp" />
+
+    <Button
+        android:id="@+id/file_db_mylitepal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:text="LitePal"
+        app:layout_constraintBottom_toBottomOf="@+id/file_db_update_button"
+        app:layout_constraintLeft_toRightOf="@+id/file_db_update_button"
+        app:layout_constraintTop_toTopOf="@+id/file_db_update_button" />
+</android.support.constraint.ConstraintLayout>
